@@ -13,7 +13,7 @@ router.delete('/logout', function(req, res) {
   res.clearCookie('cadecookie').send();
 });
 
-router.get('/profile', User.authMiddleware, function(req, res) {
+router.get('/maps', User.authMiddleware, function(req, res) {
   res.send(req.user);
 });
 
