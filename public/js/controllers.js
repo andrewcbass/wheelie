@@ -47,13 +47,10 @@ app.controller('authCtrl', function($scope, $state, AuthService) {
 app.controller("mapCtrl", function($scope, $state) {
   var map;
   function initMap() {
-    console.log("making it here");
     map = new google.maps.Map(document.getElementById('map'), {
       center: {lat: -34.397, lng: 150.644},
       zoom: 8
     });
-    console.log('MAP', map);
-
   };
 
   initMap();
