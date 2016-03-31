@@ -9,9 +9,10 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var mongoose = require('mongoose');
+
 require("dotenv").config();
 
-mongoose.connect(process.env.MONGOLAB_URI, function(err) {
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/wheelie', function(err) {
   if(err) {
     console.log(err);
   } else {

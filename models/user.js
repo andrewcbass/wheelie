@@ -4,7 +4,7 @@ var mongoose = require('mongoose');
 var bcrypt = require('bcryptjs');
 var jwt = require('jwt-simple');
 
-const JWT_SECRET = 'this is my secret. TELL NOBODY. this can be as long as you would like';
+const JWT_SECRET = 'WHEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELIEEEEEEEEEEEEEEEEEEEE';
 
 var User;
 
