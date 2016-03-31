@@ -9,13 +9,14 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var mongoose = require('mongoose');
-const mongoUrl = 'mongodb://localhost/wheelie';
 
-mongoose.connect(mongoUrl, function(err) {
+require("dotenv").config();
+
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/wheelie', function(err) {
   if(err) {
     console.log(err);
   } else {
-    console.log(`MongoDB connected to ${mongoUrl}`);
+    console.log('MongoDB connected to Heroku MongoDB');
   }
 });
 

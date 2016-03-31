@@ -1,8 +1,27 @@
+<div class='container'>
+  <h1>Add a Trip!</h1>
+  <form name="addTripForm" class="col s12" ng-submit="calcRoute(addTripForm.$valid)">
+    <div class="form-Group">
+      <input ng-model='editTrip.startLoc' type="text" class="validate" name="start" required>
+      <label class="active">Start</label>
+
+    </div>
+    <div class="form-Group">
+      <input ng-model='editTrip.endLoc' type="text" class="validate" name="end" required>
+      <label class="active">End</label>
+
+    </div>
+    <button class='btn'>Go!</button>
+  </form>
+</div>
+
 
 <div class="container">
-<div class="soTall">
+  <div class="soTall">
 
-<div id="map"></div>
-</div>
+    <div id="map"></div>
+
+    <!-- <div id="warnings-panel"></div> -->
+  </div>
 
 </div>
