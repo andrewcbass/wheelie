@@ -9,13 +9,13 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var mongoose = require('mongoose');
-const mongoUrl = 'mongodb://localhost/introtoauth';
+require("dotenv").config();
 
-mongoose.connect(mongoUrl, function(err) {
+mongoose.connect(process.env.MONGOLAB_URI, function(err) {
   if(err) {
     console.log(err);
   } else {
-    console.log(`MongoDB connected to ${mongoUrl}`);
+    console.log('MongoDB connected to Heroku MongoDB');
   }
 });
 
