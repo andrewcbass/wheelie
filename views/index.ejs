@@ -2,9 +2,10 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/css/style.css' />
-    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
 
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel='stylesheet' href='/css/theme.min.css' />
+    <link rel='stylesheet' href='/css/style.css' />
     <script src="/bower_components/angular/angular.min.js"></script>
     <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 
@@ -12,7 +13,7 @@
     <script src="/js/module.js"></script>
     <script src="/js/controllers.js"></script>
     <script src="/js/services.js"></script>
-    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBNgblZXWRnCX-l1RlpzhbF_cmtwybz5oU&callback=onGoogleReady"
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBNgblZXWRnCX-l1RlpzhbF_cmtwybz5oU&callback=onGoogleReady&libraries=geometry,drawing"
     async defer></script>
   </head>
   <body ng-app='userAuth'>
